@@ -1,3 +1,3 @@
 Ctrl::Alt
 Alt::Ctrl
-Capslock::Esc
+; Capslock::Esc
