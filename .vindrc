@@ -1,0 +1,76 @@
+set initmode = gn
+set cmd_roughpos = Center
+set cmd_fontsize = 48
+set cmd_monitor = activie
+set cursor_accel = 5
+set easyclick_bgcolor = ab9044
+set gridmove_size = 48x36
+imap <esc><esc> <to_gui_normal>
+rmap <esc><esc> <to_gui_normal>
+vmap <esc><esc> <to_gui_normal>
+emap <esc><esc> <to_gui_normal>
+gnnoremap e <to_edi_normal>
+gnmap <enter> <click_left>
+gnmap <shift><enter> <click_right>
+gnnoremap ; :
+
+gnmap <esc>q <minimize_current_window>
+gnmap <esc>o <maximize_current_window>
+gnmap <esc>h <select_left_window>
+gnmap <esc>l <select_right_window>
+gnmap <esc>k <select_upper_window>
+gnmap <esc>j <select_lower_window>
+gnmap <esc>H <snap_current_window_to_left>
+gnmap <esc>L <snap_current_window_to_right>
+gnmap <esc>J <snap_current_window_to_bottom>
+gnmap <esc>K <snap_current_window_to_top>
+gnmap <esc>e <window_resizer>
+gnmap <esc>s <exchange_window_with_nearest>
+gnmap <esc>WS <open_new_window_with_hsplit>
+gnmap <esc>Ws <open_new_window_with_vsplit>
+gnmap <esc>p <switch_to_left_tab>
+gnmap <esc>n <switch_to_right_tab>
+gnmap <esc>b <switch_window>
+gnmap <esc>w <save>
+gnmap <C-w>o <open_new_window>
+gnmap <esc>O <open_new_window>
+gnmap <esc>X <close_current_window>
+gnmap <esc>Q <close_current_window>
+gnmap <esc>F <start_explorer>
+
+gnnoremap x <close_current_tab>
+gnnoremap o <open_new_tab>
+
+gnmap <c-z> <undo>
+gnmap <c-y> <redo>
+
+gnnoremap f <easyclick><click_left>
+gnmap <esc>f <gridmove><click_left>
+gnnoremap F <gridmove><click_left>
+
+gnmap H <move_cursor_left>
+gnmap L <move_cursor_right>
+gnmap K <move_cursor_up>
+gnmap J <move_cursor_down>
+gnmap h <scroll_left>
+gnmap l <scroll_right>
+gnmap k <scroll_up>
+gnmap j <scroll_down>
+gnmap u <scroll_up_halfpage>
+gnmap b <scroll_up_halfpage>
+gnmap d <scroll_down_halfpage>
+gnnoremap gg <scroll_up_onepage><scroll_up_onepage><scroll_up_onepage><scroll_up_onepage><scroll_up_onepage>
+gnnoremap G <scroll_down_onepage><scroll_down_onepage><scroll_down_onepage><scroll_down_onepage><scroll_down_onepage>
+
+gnmap p <hotkey_paste>
+
+gnmap <c-a>o <create_new_vdesktop>
+gnmap <c-a>x <close_current_vdesktop>
+gnmap <c-a>p <switch_to_left_vdesktop>
+gnmap <c-a>n <switch_to_right_vdesktop>
+gnmap <c-a>. <taskview>
+
+gnnoremap <space> <esc>
+
+gnnoremap t <focus_textarea>
+autocmd EdiNormalEnter * <focus_textarea>
