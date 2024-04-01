@@ -18,7 +18,8 @@ $apps = @(
     '7zip',                 # 7-Zip is a file archiver with a high compression ratio
     'autohotkey',           # AutoHotkey is a free, open-source scripting language for Windows that allows users to easily create small to complex scripts for all kinds of tasks such as: form fillers, auto-clicking, macros, etc
     'make',
-    'wsl-ubuntu2004',       # Window Subsystem for Linux: Ubuntu 20.04 LTS
+    #'wsl-ubuntu2004',       # Window Subsystem for Linux: Ubuntu 20.04 LTS
+    'win-vind',             # operate Windows with key bindings like Vim
     'emacs'
 )
 
